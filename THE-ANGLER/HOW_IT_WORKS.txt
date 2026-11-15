@@ -1,0 +1,37 @@
+HOW IT WORKS - The Angler
+phaethos
+
+The whole artwork is one Python file. Almost nothing on the screen is
+visible, and that is the point.
+
+1. The lure
+   The esca hangs at the tip of a bezier curve, swaying. Its light
+   pulses with a slow rhythm plus a fast flicker, and flares at the strike.
+
+2. The light rule
+   Every cell computes the lure's light with a quadratic falloff.
+   The fish is only drawn where that light is strong enough:
+   the body is not a shape on the screen, it is a shape the light
+   reveals. The lit water around it is sparse speckles.
+
+3. The fish
+   In the fish's own frame it is built from ellipses (body, head,
+   pectoral fin) and wedges (tail, dorsal fin, jaws). The tail sways
+   by rotating its wedge around a pivot. The jaw rotates open around
+   a hinge, upper up, lower down, and the teeth appear along its edges
+   only when the mouth opens.
+
+4. The marine snow
+   Particles fall slowly and wrap. Their brightness is the lure's light
+   where they are, so they glow as they drift through the glow radius.
+
+5. The prey and the strike
+   A small fish appears at the right edge and is drawn in toward the
+   light, slowing as it arrives. At the strike the jaw snaps shut,
+   the lure flares white for a breath, the prey is gone, and the fish
+   drifts away into the dark until the loop begins again.
+
+Things you can try (for yourself)
+   r0             how far the lure's light reaches
+   STRIKE_AT      when the jaw snaps
+   LURE_TIP       where the esca hangs

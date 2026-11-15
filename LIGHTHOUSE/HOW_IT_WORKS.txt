@@ -1,0 +1,41 @@
+HOW IT WORKS - Lighthouse
+phaethos
+
+The whole artwork is one Python file. Every cell of the screen asks
+"how much light reaches me?" and the answer becomes a letter and a colour.
+
+1. The beam
+   One cone of light on a slow turn (one turn every 6 seconds).
+   A cell's angle from the lamp is compared with the beam's angle;
+   a narrow gaussian makes the hard edge and a wider one makes the skirt.
+   The light fades with distance from the lamp.
+
+2. The flash
+   When the beam sweeps past the direction of the viewer, the lamp room
+   flares and the whole scene lifts for a moment - the way a real light
+   seems to flash when it points your way.
+
+3. The sea
+   Foam lines move toward the viewer. Each line's spacing and height
+   grows with distance from the horizon, so the near water looks bigger.
+   Where the beam touches the water, the cells break into glitter:
+   a hash of the cell turns into a sparkle rhythm.
+
+4. The reflection
+   Under the lamp, a narrow column of broken light falls down the water.
+
+5. The tower
+   The tower, gallery deck, lamp room and cap are simple shape tests,
+   drawn as a near-silhouette. The lamp room glows warm and the core
+   of the lamp is almost white.
+
+6. From light to letters
+   Brighter cells get denser letters and warmer colours. The dark tower
+   stays barely visible; the stars wash out where the beam passes.
+   Each frame fades into the next, and a soft glow is added on top.
+
+Things you can try (for yourself)
+   BEAM_T         one turn of the lamp
+   FLASH_AT       the beam angle that reads as "pointing at you"
+   HZ             where the horizon sits
+   TAG_COLOR      the colours
