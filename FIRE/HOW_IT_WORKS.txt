@@ -1,0 +1,38 @@
+HOW IT WORKS - Fire
+phaethos · after the classic demoscene fire effect (early 1990s)
+
+The whole artwork is one Python file. The screen is a field of heat.
+
+1. The bed of coals
+   The bottom rows are refilled every frame with a breathing pattern of
+   hot and hotter, and the whole bed slides slowly sideways with the wind.
+
+2. Propagation
+   Every cell above takes the average of the three cells below it
+   (left, centre, right). That average cools a little on the way up:
+   a gentle multiplicative decay, plus a small random "bite" that grows
+   with height. The bite is why flames thin out instead of stopping.
+
+3. The wind
+   Each step, the sample is pulled sideways by a fraction of a cell,
+   sub-cell, so the columns lean instead of marching off screen.
+   The gusts sway the plume without drifting it away.
+
+4. The embers
+   Particles spawn inside the flames, rise faster than the field,
+   wobble with the wind, and die out on the way. They brighten the
+   cell they sit in.
+
+5. The smoke
+   What is left when the flame dies - warmth between 0.06 and 0.16 -
+   is drawn as dim grey letters that keep climbing and fading.
+
+6. From heat to letters
+   Hotter cells get denser letters, from . and : up to 8 $ % #, and
+   warmer colours, from smoke grey through deep red and orange to
+   white-hot. Each frame fades into the next and a soft glow is added.
+
+Things you can try (for yourself)
+   decay / bite   how fast heat cools, where the flames stop
+   FLARE_T        seconds between flare-ups
+   wind()         where the coals slide

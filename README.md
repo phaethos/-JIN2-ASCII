@@ -37,3 +37,30 @@ Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 © 2026 JIN2. All rights reserved.
 Images and videos in this repository may not be reused without permission.
+
+---
+
+# Fork additions · new works, 2026
+
+Five new pieces added on this fork, drawn with the same tools and the same
+rule: only letters, numbers and symbols. All are strictly warm-spectrum —
+amber, fire, teal, green — no purple anywhere.
+
+| | Work | Theme | Source code |
+|---|---|---|---|
+| ![](LIGHTHOUSE/images/03_sea.png) | [LIGHTHOUSE](LIGHTHOUSE/) — a lamp turning its beam over dark water | ocean · night | free, in this repository |
+| ![](FIRE/images/02_blaze.png) | [FIRE](FIRE/) — a port of the classic demoscene fire effect, credited to the original technique | fire · found classic | free, in this repository |
+| ![](SOLAR-ECLIPSE/images/02_totality.png) | [SOLAR ECLIPSE](SOLAR-ECLIPSE/) — crescent, totality, corona, diamond ring | space · eclipse | free, in this repository |
+| ![](FIREFLY-FIELD/images/02_wave.png) | [FIREFLY FIELD](FIREFLY-FIELD/) — ninety fireflies, some flashing in a travelling wave | jungle · night | free, in this repository |
+| ![](THE-ANGLER/images/02_lurk.png) | [THE ANGLER](THE-ANGLER/) — a deep-sea ambush you only see where the lure lights it | ocean · deep sea | free, in this repository |
+
+New works are by phaethos, 2026, released under the same spirit of license
+as the originals (free for personal projects, credit when shared — see each
+folder's LICENSE.txt).
+
+## Tools
+
+- [tools/render_previews.py](tools/render_previews.py) replays every artwork
+  headlessly in a virtual display and cuts the stills and `preview.gif`
+  each folder ships: `python tools/render_previews.py [NAME ...]`
+

@@ -1,0 +1,43 @@
+HOW IT WORKS - Solar Eclipse
+phaethos
+
+The whole artwork is one Python file. Every cell asks "am I sun, moon,
+corona, or sky?" and the answer becomes a letter and a colour.
+
+1. The slide of the moon
+   The moon's position comes from a table of waypoints, eased smoothly
+   between them: in from the left, a dwell over the sun, out to the right.
+
+2. The jagged limb
+   The moon's edge is its radius plus a small sum of sines of the angle -
+   mountains and valleys. This is what breaks the photosphere into
+   Baily's beads at the contacts.
+
+3. The photosphere
+   The sun is a disc with a soft edge. Where the moon covers it, the
+   cell is simply not drawn. What remains is the crescent.
+
+4. The corona
+   During totality, cells beyond the limb get a fast-fading base light
+   times streamers: sharp ridges of cos(angle), a finer ripple, and
+   polar plumes brighter near the poles. Strong streamers are drawn
+   with / | \ - letters along their own ray. The moon occludes all of it.
+
+5. The diamond ring
+   Just after second contact and just before third, one bead of sunlight
+   survives on the limb: a small gaussian, plus a cross of light -
+   a long ray along the bead's direction and two short ones across.
+
+6. The chromosphere and the prominences
+   A thin red rim shows only at the edges of totality. Red loops hang
+   at three fixed limb angles, flickering, while the sun is dark.
+
+7. The sky
+   The stars come out during totality and fade again. The moon itself
+   is faintly visible by earthshine, and only then.
+
+Things you can try (for yourself)
+   C1, C2         second and third contact
+   RM             the moon's radius
+   jag()          the shape of the lunar limb
+   TAG_COLOR      the colours

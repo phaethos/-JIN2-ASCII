@@ -1,0 +1,30 @@
+HOW IT WORKS - Firefly Field
+phaethos
+
+The whole artwork is one Python file. Ninety fireflies, one field.
+
+1. The grass
+   Blades are thin stripes of a sine field, bent sideways by a slow sway
+   that grows with height, dense and dark at the bottom, pale at the tips.
+   Mist drifts just above them. Leaves hang in from the top corners.
+
+2. The flies
+   Each firefly has an anchor and a wander: a few slow sines per axis.
+   Its flash is a sharp attack and a slow decay, once per period.
+   Flies inside the grass are dimmed, as if behind the blades.
+
+3. The wave
+   Four in ten flies share one rhythm, with their phase offset by their
+   position across the field. Together their flashes make a band of light
+   that sweeps from one side to the other, then rests and starts again.
+   The others free-run, so the field never looks mechanical.
+
+4. From light to letters
+   A firefly's own cell is a * or +; its four neighbours keep a faint
+   copy of the light, the way a dark-adapted eye smears a spark.
+   Each frame fades into the next, and a soft glow is added on top.
+
+Things you can try (for yourself)
+   TG             the shared rhythm
+   NF             how many flies
+   0.85           how steeply the wave's phase crosses the field
